@@ -1,9 +1,12 @@
 #PPLAY IMPORTS
+import json
+
 from PPlay.window import Window
 from PPlay.scenemanager import Scene, SceneManager
 
 #CLASSES AUTORAIS
 from Button import Button
+from Player import Player
 
 #CENAS
 
@@ -39,3 +42,6 @@ class EscolherDificuldade(Scene):
         if self.teclado.key_down("ESC"):
             from Assets.Cenas.Menu import Menu
             SceneManager.change_scene(Menu())
+
+    def changeDifficulty(self, difficulty):
+        pass

@@ -14,13 +14,13 @@ class Menu(Scene):
 
         self.jogar = Button(
             "Assets/Sprites/UI/Jogar.png",
-            lambda: SceneManager.change_scene("FaseUm")
+            lambda: self.change_to_scene("FaseUm")
         )
         self.jogar.sprite.set_position(300, 250)  # Posicione o botão
 
         self.dificuldade = Button(
             "Assets/Sprites/UI/Dificuldade.png",
-            lambda: SceneManager.change_scene("EscolherDificuldade")
+            lambda: self.change_to_scene("EscolherDificuldade")
         )
         self.dificuldade.sprite.set_position(300, 310)  # Posicione o botão
 
